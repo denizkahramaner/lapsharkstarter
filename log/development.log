@@ -7416,3 +7416,915 @@ ActionController::RoutingError (No route matches [GET] "/assets/rails.js"):
 
 
   Rendered /Users/dennizk/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Connecting to database specified by database.yml
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (74.7ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (76.8ms)
+  Rendered preorder/index.html.erb within layouts/application (81.7ms)
+  Rendered preorder/_header.html.erb (16.9ms)
+  Rendered preorder/_copyright.html.erb (0.2ms)
+  Rendered preorder/_google_analytics.html.erb (0.3ms)
+  Rendered preorder/_footer.html.erb (2.0ms)
+Completed 200 OK in 174ms (Views: 169.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /reset.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /main.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /jquery-ui.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /jquery.details.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /preorder.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /plugins.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/setup.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /setup.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /bootstrap-responsive.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /typica.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 13:36:22 -0700
+Served asset /video_placeholder.png - 304 Not Modified (1ms)
+
+
+Started GET "/preorder/checkout" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Processing by PreorderController#checkout as HTML
+  Rendered preorder/_payment_options.html.erb (0.5ms)
+  Rendered preorder/checkout/_sidebar.html.erb (0.2ms)
+  Rendered preorder/checkout.html.erb within layouts/application (3.3ms)
+  Rendered preorder/_header.html.erb (2.5ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (0.9ms)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /typica.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/setup.js?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /setup.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-13 13:37:10 -0700
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 13:38:50 -0700
+Connecting to database specified by database.yml
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (69.4ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (71.0ms)
+  Rendered preorder/index.html.erb within layouts/application (75.4ms)
+  Rendered preorder/_header.html.erb (14.9ms)
+  Rendered preorder/_copyright.html.erb (0.2ms)
+  Rendered preorder/_google_analytics.html.erb (0.3ms)
+  Rendered preorder/_footer.html.erb (1.8ms)
+Completed 200 OK in 161ms (Views: 155.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:38:50 -0700
+Served asset /reset.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:38:50 -0700
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-13 13:38:50 -0700
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-13 13:38:50 -0700
+Served asset /bootstrap-responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:38:50 -0700
+Served asset /main.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:38:50 -0700
+Served asset /typica.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 13:38:51 -0700
+Served asset /video_placeholder.png - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20121004072615)
+Migrating to CreateOrders (20121004072706)
+Migrating to CreatePaymentOptions (20130106183354)
+Migrating to AddPaymentOptionIdToOrders (20130107010733)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 13:43:30 -0700
+Connecting to database specified by database.yml
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (69.8ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (71.5ms)
+  Rendered preorder/index.html.erb within layouts/application (75.9ms)
+  Rendered preorder/_header.html.erb (13.9ms)
+  Rendered preorder/_copyright.html.erb (0.2ms)
+  Rendered preorder/_google_analytics.html.erb (0.3ms)
+  Rendered preorder/_footer.html.erb (1.8ms)
+Completed 200 OK in 159ms (Views: 154.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /jquery-ui.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /jquery.details.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /preorder.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /plugins.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/setup.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /setup.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /bootstrap.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /typica.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 13:43:31 -0700
+Served asset /video_placeholder.png - 304 Not Modified (1ms)
+
+
+Started GET "/preorder/checkout" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Processing by PreorderController#checkout as HTML
+  Rendered preorder/_payment_options.html.erb (0.5ms)
+  Rendered preorder/checkout/_sidebar.html.erb (0.2ms)
+  Rendered preorder/checkout.html.erb within layouts/application (3.0ms)
+  Rendered preorder/_header.html.erb (2.2ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (0.9ms)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /main.css - 200 OK (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /html5shiv-printshiv.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /jquery-ui.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /jquery.details.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /jquery.textchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /preorder.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /plugins.js - 200 OK (0ms)
+
+
+Started GET "/assets/setup.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /setup.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /bootstrap-responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:55 -0700
+Served asset /typica.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (2.9ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (4.1ms)
+  Rendered preorder/index.html.erb within layouts/application (4.7ms)
+  Rendered preorder/_header.html.erb (2.3ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.1ms)
+  Rendered preorder/_footer.html.erb (0.9ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /main.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /html5shiv-printshiv.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /jquery-ui.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /jquery.details.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /jquery.textchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /preorder.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /plugins.js - 200 OK (0ms)
+
+
+Started GET "/assets/setup.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /setup.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /bootstrap-responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /typica.css - 200 OK (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 13:43:58 -0700
+Served asset /video_placeholder.png - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (3.4ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (4.3ms)
+  Rendered preorder/index.html.erb within layouts/application (4.8ms)
+  Rendered preorder/_header.html.erb (2.4ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (0.9ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/setup.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /setup.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /typica.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 13:44:11 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 13:44:22 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (3.4ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (5.1ms)
+  Rendered preorder/index.html.erb within layouts/application (6.0ms)
+  Rendered preorder/_header.html.erb (4.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.1ms)
+  Rendered preorder/_footer.html.erb (1.5ms)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:22 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:22 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:22 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:22 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/setup.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /setup.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /typica.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 13:44:23 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.0ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (5.5ms)
+  Rendered preorder/index.html.erb within layouts/application (6.2ms)
+  Rendered preorder/_header.html.erb (3.0ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.0ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/setup.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /setup.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /typica.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 13:44:31 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.3ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (6.0ms)
+  Rendered preorder/index.html.erb within layouts/application (7.0ms)
+  Rendered preorder/_header.html.erb (2.0ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.1ms)
+  Rendered preorder/_footer.html.erb (1.1ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/setup.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /setup.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /typica.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 13:44:46 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.4ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT SUM("orders"."price") AS sum_id FROM "orders" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (3.6ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (5.2ms)
+  Rendered preorder/index.html.erb within layouts/application (5.8ms)
+  Rendered preorder/_header.html.erb (2.7ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.1ms)
+  Rendered preorder/_footer.html.erb (1.3ms)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/setup.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /setup.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typica.css?body=1" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /typica.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 13:44:52 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
