@@ -1,3 +1,27 @@
+<%= stylesheet_link_tag    "bootstrap", "bootstrap-responsive", "typica" %>
+     <%= javascript_include_tag "jquery", "bootstrap", "plugins", "setup", "rails" %>
+<body>
+	<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html"><img src="/images/Lapshark_Logo_Small.png" alt="Lapshark Home Page"></a>
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li><a href="http://www.lapshark.com/welcome/index">Home</a></li>
+              <li class="active"><a href="#">Store</a></li>
+              <li><a href="http://www.lapshark.com/welcome/about">About</a></li>
+              <li><a href="http://www.lapshark.com/welcome/index">Sign In</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
 <div id="header">
   <div class="wrapper clearfix">
     <h1 id="lockitron_header"><a href="/"><%= Settings.product_name %></a></h1>
