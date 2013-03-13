@@ -4919,3 +4919,1615 @@ Served asset /video_placeholder.png - 304 Not Modified (0ms)
 
 Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-11 23:13:58 -0700
 Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:10:28 -0700
+Connecting to database specified by database.yml
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (116.8ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (118.7ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.7ms)
+  Rendered preorder/index.html.erb within layouts/application (127.7ms)
+  Rendered preorder/_header.html.erb (0.4ms)
+  Rendered preorder/_copyright.html.erb (0.2ms)
+  Rendered preorder/_google_analytics.html.erb (0.3ms)
+  Rendered preorder/_footer.html.erb (1.9ms)
+Completed 200 OK in 228ms (Views: 221.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /application.css - 200 OK (52ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /reset.css - 200 OK (2ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /main.css - 200 OK (5ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /html5shiv-printshiv.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /jquery-ui.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /jquery.details.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /jquery.textchange.js - 200 OK (1ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /preorder.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /application.js - 200 OK (10ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /video_placeholder.png - 200 OK (1ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:10:29 -0700
+Served asset /bullet.png - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:15:44 -0700
+Connecting to database specified by database.yml
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (134.5ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (136.3ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.5ms)
+  Rendered preorder/index.html.erb within layouts/application (143.3ms)
+  Rendered preorder/_header.html.erb (0.4ms)
+  Rendered preorder/_copyright.html.erb (0.2ms)
+  Rendered preorder/_google_analytics.html.erb (0.3ms)
+  Rendered preorder/_footer.html.erb (1.7ms)
+Completed 200 OK in 185ms (Views: 180.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /reset.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /main.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /jquery-ui.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /jquery.details.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /preorder.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /video_placeholder.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:15:45 -0700
+Served asset /bullet.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:15:52 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (5.2ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (6.9ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.1ms)
+  Rendered preorder/index.html.erb within layouts/application (9.0ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.1ms)
+  Rendered preorder/_footer.html.erb (1.5ms)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:15:52 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:52 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:15:52 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:15:52 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:52 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:52 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:53 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:53 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:15:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:15:53 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20121004072615)
+Migrating to CreateOrders (20121004072706)
+Migrating to CreatePaymentOptions (20130106183354)
+Migrating to AddPaymentOptionIdToOrders (20130107010733)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:16:19 -0700
+Connecting to database specified by database.yml
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (128.2ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (131.3ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.4ms)
+  Rendered preorder/index.html.erb within layouts/application (139.6ms)
+  Rendered preorder/_header.html.erb (0.4ms)
+  Rendered preorder/_copyright.html.erb (0.2ms)
+  Rendered preorder/_google_analytics.html.erb (0.3ms)
+  Rendered preorder/_footer.html.erb (1.7ms)
+Completed 200 OK in 178ms (Views: 172.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /main.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /jquery.details.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /preorder.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:16:20 -0700
+Served asset /video_placeholder.png - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (5.8ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (7.4ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.1ms)
+  Rendered preorder/index.html.erb within layouts/application (8.9ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.1ms)
+  Rendered preorder/_footer.html.erb (1.4ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /main.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:16:40 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.3ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (5.5ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (7.3ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (8.7ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.1ms)
+  Rendered preorder/_footer.html.erb (1.2ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:16:44 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (5.3ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (7.0ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (8.2ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.3ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /main.css - 200 OK (1ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /html5shiv-printshiv.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /jquery-ui.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /jquery.details.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /jquery.textchange.js - 200 OK (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /preorder.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:16:56 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:16:57 -0700
+Served asset /video_placeholder.png - 200 OK (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:16:57 -0700
+Served asset /bullet.png - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.7ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (6.3ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (7.7ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.1ms)
+  Rendered preorder/_footer.html.erb (1.0ms)
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /main.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:17:40 -0700
+Served asset /video_placeholder.png - 200 OK (21ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:17:58 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.2ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (5.3ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (6.4ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (0.9ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /main.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:17:59 -0700
+Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.6ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (6.3ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.1ms)
+  Rendered preorder/index.html.erb within layouts/application (8.0ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.3ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:18:04 -0700
+Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (5.4ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (6.9ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (8.3ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.0ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:18:12 -0700
+Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:18:33 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.6ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (5.8ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (7.0ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.1ms)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:33 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /main.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:18:34 -0700
+Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (5.1ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (6.6ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (7.9ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.2ms)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:18:44 -0700
+Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:20:48 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.3ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (5.8ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (7.2ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.1ms)
+  Rendered preorder/_footer.html.erb (1.4ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:20:49 -0700
+Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.1ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.1ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (5.2ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (6.6ms)
+  Rendered preorder/_header.html.erb (0.0ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.0ms)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /main.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:21:10 -0700
+Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.3ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.8ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (6.0ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (7.5ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (0.9ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:22:00 -0700
+Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.9ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (6.1ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (7.5ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (0.9ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:22:36 -0700
+Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.8ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (6.5ms)
+  Rendered preorder/homepage/_faqs.html.erb (0.0ms)
+  Rendered preorder/index.html.erb within layouts/application (8.1ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.3ms)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bullet.png" for 127.0.0.1 at 2013-03-13 12:22:48 -0700
+Served asset /bullet.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (36.4ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (37.7ms)
+  Rendered preorder/index.html.erb within layouts/application (38.8ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.1ms)
+  Rendered preorder/_google_analytics.html.erb (0.1ms)
+  Rendered preorder/_footer.html.erb (2.8ms)
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:24:41 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:24:42 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Processing by PreorderController#index as HTML
+  Rendered preorder/homepage/_value_proposition.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "orders" WHERE (token != '' OR token != NULL)[0m
+  [1m[35m (0.2ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT sum(amount) FROM "payment_options" INNER JOIN "orders" ON "orders"."payment_option_id" = "payment_options"."id" WHERE (token != '' OR token != NULL)
+  Rendered preorder/homepage/_stats.html.erb (4.7ms)
+  Rendered preorder/homepage/_show_dont_tell.html.erb (5.9ms)
+  Rendered preorder/index.html.erb within layouts/application (6.5ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.3ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.4ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /main.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/video_placeholder.png" for 127.0.0.1 at 2013-03-13 12:25:00 -0700
+Served asset /video_placeholder.png - 304 Not Modified (0ms)
+
+
+Started GET "/preorder/checkout" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Processing by PreorderController#checkout as HTML
+  [1m[36mPaymentOption Load (0.3ms)[0m  [1mSELECT "payment_options".* FROM "payment_options" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT("orders"."token") FROM "orders" WHERE "orders"."payment_option_id" = 2
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT("orders"."token") FROM "orders" WHERE "orders"."payment_option_id" = 2[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT("orders"."token") FROM "orders" WHERE "orders"."payment_option_id" = 2
+  Rendered preorder/_payment_options.html.erb (14.8ms)
+  Rendered preorder/checkout/_sidebar.html.erb (0.4ms)
+  Rendered preorder/checkout.html.erb within layouts/application (18.2ms)
+  Rendered preorder/_header.html.erb (0.0ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.0ms)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:27:49 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/preorder/checkout" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Processing by PreorderController#checkout as HTML
+  [1m[36mPaymentOption Load (0.2ms)[0m  [1mSELECT "payment_options".* FROM "payment_options" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT("orders"."token") FROM "orders" WHERE "orders"."payment_option_id" = 2
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT("orders"."token") FROM "orders" WHERE "orders"."payment_option_id" = 2[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT("orders"."token") FROM "orders" WHERE "orders"."payment_option_id" = 2
+  Rendered preorder/_payment_options.html.erb (4.0ms)
+  Rendered preorder/checkout/_sidebar.html.erb (0.3ms)
+  Rendered preorder/checkout.html.erb within layouts/application (6.0ms)
+  Rendered preorder/_header.html.erb (0.0ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (0.9ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:14 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/preorder/checkout" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Processing by PreorderController#checkout as HTML
+  Rendered preorder/_payment_options.html.erb (0.1ms)
+  Rendered preorder/checkout/_sidebar.html.erb (0.0ms)
+  Rendered preorder/checkout.html.erb within layouts/application (2.6ms)
+  Rendered preorder/_header.html.erb (0.1ms)
+  Rendered preorder/_copyright.html.erb (0.0ms)
+  Rendered preorder/_google_analytics.html.erb (0.0ms)
+  Rendered preorder/_footer.html.erb (1.6ms)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/html5shiv-printshiv.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /html5shiv-printshiv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.details.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /jquery.details.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textchange.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /jquery.textchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/preorder.js?body=1" for 127.0.0.1 at 2013-03-13 12:28:27 -0700
+Served asset /preorder.js - 304 Not Modified (0ms)
+
+
+Started POST "/preorder/prefill" for 127.0.0.1 at 2013-03-13 12:28:34 -0700
+Processing by PreorderController#prefill as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y/L8M4bcC6R/J79YoUPFQa2yFjDoWy7NHXIUwEWN+Rw=", "email"=>"dennizk@gmail.com", "preorder"=>"true", "quantity"=>"", "commit"=>"Checkout"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'dennizk@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "orders" 
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT "orders".* FROM "orders" ORDER BY number DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."uuid" = '6ce4aec30b09afc53ffa33e6f638c54d' LIMIT 1[0m
+Binary data inserted for `string` type on column `uuid`
+  [1m[35mSQL (49.3ms)[0m  INSERT INTO "orders" ("address_one", "address_two", "city", "country", "created_at", "expiration", "name", "number", "payment_option_id", "phone", "price", "shipping", "state", "status", "token", "tracking_number", "transaction_id", "updated_at", "user_id", "uuid", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address_one", nil], ["address_two", nil], ["city", nil], ["country", nil], ["created_at", Wed, 13 Mar 2013 12:28:34 PDT -07:00], ["expiration", nil], ["name", "Lapshark"], ["number", 10], ["payment_option_id", nil], ["phone", nil], ["price", #<BigDecimal:7fb835753d08,'0.1E1',9(36)>], ["shipping", nil], ["state", nil], ["status", nil], ["token", nil], ["tracking_number", nil], ["transaction_id", nil], ["updated_at", Wed, 13 Mar 2013 12:28:34 PDT -07:00], ["user_id", 1], ["uuid", "6ce4aec30b09afc53ffa33e6f638c54d"], ["zip", nil]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 89ms
+
+ArgumentError (wrong number of arguments (3 for 2)):
+  app/controllers/preorder_controller.rb:29:in `prefill'
+
+
+  Rendered /Users/dennizk/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/dennizk/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/dennizk/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started GET "/preorder/prefill" for 127.0.0.1 at 2013-03-13 12:33:38 -0700
+Connecting to database specified by database.yml
+Processing by PreorderController#prefill as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 13 Mar 2013 12:33:39 PDT -07:00], ["email", nil], ["updated_at", Wed, 13 Mar 2013 12:33:39 PDT -07:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders" [0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" ORDER BY number DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."uuid" = 'ff5cb5368087d4667d13f40660803de1' LIMIT 1
+Binary data inserted for `string` type on column `uuid`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "orders" ("address_one", "address_two", "city", "country", "created_at", "expiration", "name", "number", "payment_option_id", "phone", "price", "shipping", "state", "status", "token", "tracking_number", "transaction_id", "updated_at", "user_id", "uuid", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address_one", nil], ["address_two", nil], ["city", nil], ["country", nil], ["created_at", Wed, 13 Mar 2013 12:33:39 PDT -07:00], ["expiration", nil], ["name", "Lapshark"], ["number", 10], ["payment_option_id", nil], ["phone", nil], ["price", #<BigDecimal:7fc5f2b8a9d8,'0.1E1',9(36)>], ["shipping", nil], ["state", nil], ["status", nil], ["token", nil], ["tracking_number", nil], ["transaction_id", nil], ["updated_at", Wed, 13 Mar 2013 12:33:39 PDT -07:00], ["user_id", 2], ["uuid", "ff5cb5368087d4667d13f40660803de1"], ["zip", nil]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to https://authorize.payments-sandbox.amazon.com/cobranded-ui/actions/start?callerKey=AKIAIDSSJ2Z3NYOACNRA&callerReference=ff5cb5368087d4667d13f40660803de1&collectShippingAddress=True&globalAmountLimit=6&paymentReason=One%20dollar%20donation%20towards%20coffee&pipelineName=MultiUse&returnURL=http%3A%2F%2Flocalhost%3A3000%2Fpreorder%2Fpostfill&signature=93a0GXqIQYcP8GbkFQDfvtxluD%2FoKDf2yVCRIhEev04%3D&signatureMethod=HmacSHA256&signatureVersion=2&transactionAmount=1&version=2009-01-09
+Completed 302 Found in 111ms (ActiveRecord: 12.1ms)
+
+
+Started POST "/preorder/prefill" for 127.0.0.1 at 2013-03-13 12:33:48 -0700
+Processing by PreorderController#prefill as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y/L8M4bcC6R/J79YoUPFQa2yFjDoWy7NHXIUwEWN+Rw=", "email"=>"dennizk@gmail.com", "preorder"=>"true", "quantity"=>"", "commit"=>"Checkout"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'dennizk@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "orders" 
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" ORDER BY number DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."uuid" = '95af35709723faa9118a54eafcbd507e' LIMIT 1[0m
+Binary data inserted for `string` type on column `uuid`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "orders" ("address_one", "address_two", "city", "country", "created_at", "expiration", "name", "number", "payment_option_id", "phone", "price", "shipping", "state", "status", "token", "tracking_number", "transaction_id", "updated_at", "user_id", "uuid", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address_one", nil], ["address_two", nil], ["city", nil], ["country", nil], ["created_at", Wed, 13 Mar 2013 12:33:48 PDT -07:00], ["expiration", nil], ["name", "Lapshark"], ["number", 10], ["payment_option_id", nil], ["phone", nil], ["price", #<BigDecimal:7fc5f5d59590,'0.1E1',9(36)>], ["shipping", nil], ["state", nil], ["status", nil], ["token", nil], ["tracking_number", nil], ["transaction_id", nil], ["updated_at", Wed, 13 Mar 2013 12:33:48 PDT -07:00], ["user_id", 1], ["uuid", "95af35709723faa9118a54eafcbd507e"], ["zip", nil]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to https://authorize.payments-sandbox.amazon.com/cobranded-ui/actions/start?callerKey=AKIAIDSSJ2Z3NYOACNRA&callerReference=95af35709723faa9118a54eafcbd507e&collectShippingAddress=True&globalAmountLimit=6&paymentReason=One%20dollar%20donation%20towards%20coffee&pipelineName=MultiUse&returnURL=http%3A%2F%2Flocalhost%3A3000%2Fpreorder%2Fpostfill&signature=py9CvxoIwp4OB9jkqZY2%2F17DTdoU1emi9fxHE64iK3k%3D&signatureMethod=HmacSHA256&signatureVersion=2&transactionAmount=1&version=2009-01-09
+Completed 302 Found in 11ms (ActiveRecord: 2.5ms)

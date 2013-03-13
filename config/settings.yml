@@ -7,25 +7,25 @@
 
 # Set your project goal here - dollar amount
 # NOTE: if you manually want to adjust your progress to test the site, head over to the Order model (app/models/order.rb)
-project_goal: 240
+project_goal: 30
 
 # If you want to edit the FAQ, head over to app/views/preorder/homepage/_faqs.html.erb
 
 # This'll be both the page title (<title></title>) and the name in the header
-product_name: "Roberto's Birthday Present"
+product_name: "Lapshark"
 
 # This will be used in sentences like Hooray You've just reserved product_description
-product_description: "Poax Ploom, the ultimate vaporizer which Roberto will use in stressful times of coding"
+product_description: "The ultimate swimming monitor, which tracks your lap times, set times, number of strokes and breaths, which then syncs with your iPhone to let you track your progress and compete with your friends"
 
 # An image showcasing your product -- it'll show up when you pin your product
 # It should be in app/assets/images
-product_image_path: "roberto.jpg"
+product_image_path: "video_placeholder.png"
 
 # The message on the preorder page, Lockitron's is ""
-value_proposition: "We are buying a Pax Ploom for Roberto's birthday, chip in on this website!"
+value_proposition: "Our team is currently busy building Lapshark. Help us buy coffee for sleepless nights by donating $1"
 
 # YouTube or Vimeo Video URL (The embed URL, without the query string options)
-video_embed_url: "http://www.youtube.com/embed/HJnRG9xMfZ8"
+video_embed_url: "http://www.youtube.com/embed/Y61pLTlvkTw"
 
 # If set to true, then the image at "/assets/video_placeholder.png" will be shown in place of the youtube
 # video.  When the user clicks it, the vid will replace the image and start playing.
@@ -40,19 +40,19 @@ use_video_placeholder: true
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
 amazon_access_key: "AKIAIDSSJ2Z3NYOACNRA"
 amazon_secret_key: "aTbwsr1Qg4T1UIf6kgLlAka8Tj48ms8AyjOtWlMY"
-price: 	15
+price: 	1
 
 # if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.
 # There is a PaymentOption model for storing info about payment options.  To set up your payment options you should
 # put code in seeds.rb, then run rake db:seed
-use_payment_options: true
+use_payment_options: false
 
-payment_description: "Birthday Present for Roberto. The total cost including shipping was 290 dollars, chip in to be a part of the best birthday present Berto ever had!"
+payment_description: "One dollar donation towards coffee"
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
 # this value will be added to the price to create a charge limit
-charge_limit: 80.00
+charge_limit: 5
 
 # Stats settings
 
@@ -73,15 +73,15 @@ progress_text: "Total amount raised!"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "Deniz already ordered the Pax Ploom online. When it arrives this week, Deniz will notify every backer and we will give Roberto the gift together!"
+ships: "If you help us buy coffee, you will be the first ones to be notified when our product launches!"
 
 # On Lockitron, it's "Reserve Now"
-call_to_action: "Chip in Now"
+call_to_action: "Support Us"
 # On Lockitron, this is "Only $149 for a limited time"
-price_human: "$40"
+price_human: "$1"
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
-dont_give_them_a_reason_to_say_no: "Deniz already ordered the Ploom. The total cost including shipping was 290 dollars. Chip in to be a part of the best birthday present Roberto ever had!"
+dont_give_them_a_reason_to_say_no: "You will not get charged until we buy our coffee."
 
 # Google Analytics
 google_id: "1234567890"

@@ -24,13 +24,16 @@ class PreorderController < ApplicationController
     # This is where all the magic happens. We create a multi-use token with Amazon, letting us charge the user's Amazon account
     # Then, if they confirm the payment, Amazon POSTs us their shipping details and phone number
     # From there, we save it, and voila, we got ourselves a preorder!
-    port = Rails.env.production? ? "" : ":3000"
-    callback_url = "#{request.scheme}://#{request.host}#{port}/preorder/postfill"
-    redirect_to AmazonFlexPay.multi_use_pipeline(@order.uuid, callback_url,
+    @pipeline = AmazonFlexPay.multi_use_pipeline(@order.uuid,
                                                  :transaction_amount => price,
-                                                 :global_amount_limit => (price + Settings.charge_limit),
-                                                 :collect_shipping_address => "False",
+                                                 :global_amount_limit => price + Settings.charge_limit,
+                                                 :collect_shipping_address => "True",
                                                  :payment_reason => Settings.payment_description)
+
+
+    port = Rails.env.production? ? "" : ":3000"
+    redirect_to @pipeline.url("#{request.scheme}://#{request.host}#{port}/preorder/postfill")
+    
   end
 
   def postfill
